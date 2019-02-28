@@ -5,7 +5,7 @@ Make sure you have ruby 2.2.3 installed
 
 ## Setup
 
-Run the following command to setup the project:
+Run the following commands to setup the project:
 
 ```
 bundle install
@@ -25,7 +25,7 @@ http://localhost:3010 because the client app
 will connect to it, therefore the `-p 3010` option should
 not be omitted.
 
-## Arquitecture
+## Architecture
 
 This is a RESTful API that uses the MVC (Model-View-Controller) design pattern. Although, due to its simplicity, in this app most of the controller actions are not
 linked to a view, but directly render the JSON data from the controller.
