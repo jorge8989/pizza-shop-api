@@ -36,7 +36,14 @@ class Api::OrdersController < ApplicationController
     def order_params
       params.permit(:delivered_at, :state,
         products_attributes: [
-          :id, :food_id, :flavor_id, :cheese, :sauce, :crust,:size, :slices
+          :id,
+          :food_id,
+          :flavor_id,
+          :cheese,
+          :sauce,
+          :crust,:size,
+          :slices,
+          topping_ids: []
         ])
     end
   end

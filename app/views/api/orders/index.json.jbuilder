@@ -6,6 +6,11 @@ json.array!(@orders) do |order|
       json.food_name product.food.name
       json.(product, :flavor_id)
       json.flavor_name product.flavor ? product.flavor.name : nil
+      json.toppings do
+        json.array!(product.toppings) do |topping|
+          json.(topping, :id, :name)
+        end
+      end
       json.(product, :cheese, :sauce, :crust, :size, :slices)
     end
   end
