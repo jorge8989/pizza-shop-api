@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  delivered_at: 2019-02-27 00:32:03
+  cheese: MyString
+  sauce: MyString
+  crust: MyString
+  size: MyString
+  slices: 1
+
+two:
+  delivered_at: 2019-02-27 00:32:03
+  cheese: MyString
+  sauce: MyString
+  crust: MyString
+  size: MyString
+  slices: 1

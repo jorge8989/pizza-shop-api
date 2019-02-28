@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  food_id: 
+  order_id: 
+  cheese: MyString
+  sauce: MyString
+  crust: MyString
+  size: MyString
+  slices: 1
+
+two:
+  food_id: 
+  order_id: 
+  cheese: MyString
+  sauce: MyString
+  crust: MyString
+  size: MyString
+  slices: 1
