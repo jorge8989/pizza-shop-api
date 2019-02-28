@@ -4,6 +4,6 @@ Rails.application.routes.draw do
     resources :flavors
     resources :toppings
     resources :products
-    resources :orders
+    resources :orders, :defaults => { :format => 'json' }
   end
 end

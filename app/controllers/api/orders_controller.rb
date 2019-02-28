@@ -3,17 +3,13 @@ class Api::OrdersController < ApplicationController
 
     def index
       @orders = Order.all
-      render json: @orders.select(:id, :state, :delivered_at), status: 200
-    end
-
-    def show
-      render json: @order, status: 200
+      render 'index', status: 200
     end
 
     def create
       @order = Order.new(order_params)
       if @order.save
-        render json: @order, status: 201
+        render 'show', status: 201
       else
         render json: @order.errors, status: 422
       end
@@ -38,6 +34,6 @@ class Api::OrdersController < ApplicationController
     end
 
     def order_params
-      params.permit(:delivered_at, :state)
+      params.permit(:delivered_at, :state, products_attributes: [:id, :food_id, :cheese, :sauce, :crust, :size, :slices])
     end
   end
